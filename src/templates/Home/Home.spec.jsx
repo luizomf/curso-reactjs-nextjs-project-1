@@ -98,7 +98,7 @@ describe('<Home />', () => {
     render(<Home />);
     const noMorePosts = screen.getByText('Não existem posts =(');
 
-    // expect.assertions(3);
+    expect.assertions(2);
 
     await waitForElementToBeRemoved(noMorePosts);
 
